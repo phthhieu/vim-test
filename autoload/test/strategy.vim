@@ -53,7 +53,6 @@ function! test#strategy#neovim(cmd) abort
   execute term_position . ' new'
   call termopen(a:cmd)
   au BufDelete <buffer> wincmd p " switch back to last window
-  startinsert
 endfunction
 
 function! test#strategy#vimterminal(cmd) abort
